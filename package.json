@@ -1,0 +1,32 @@
+{
+  "name": "cachalot-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "dev": "tsx watch src/index.ts",
+  "build": "tsc",
+  "start": "node dist/index.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParkerCantero/cachalot-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ParkerCantero/cachalot-practice/issues"
+  },
+  "homepage": "https://github.com/ParkerCantero/cachalot-practice#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

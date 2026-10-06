@@ -45,3 +45,15 @@ clientesRouter.get("/:id", (req, res) => {
     }
     res.json(cliente);
 })
+
+
+clientesRouter.delete("/:id", (req, res) => {
+    const id = Number(req.params.id);
+    const indice = clientes.findIndex(c => c.id === id);
+    if(indice === -1){
+        res.status(404).json({error: "Cliente no encontrado"});
+        return;
+    }
+    clientes.splice(indice, 1);
+    res.status(204).send();
+})
